@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employee Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!--	jQuery	-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <!--bootstrap-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+        <!--JPDP libs-->
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="page-header text-center">
+			<h1>Employee Form Using JPDB API</h1>
+		</div>
+
+		<form id='empform' method="post" autocomplete="off">
+
+
+			<!--Employee ID -->
+			<div class='form-group'>
+				<label>Employee ID</label>
+				<input type="text" id='empid' class="form-control" onchange="getemp()">
+			</div>
+
+
+
+			<!--Employee Name -->
+			<div class='form-group'>
+				<label>Employee Name</label>
+				<input type="text" id='name' class="form-control">
+			</div>
+
+
+			<!--Employee Salary -->
+			<div class='form-group'>
+				<label>Employee Salary</label>
+				<input type="text" id='salary' class="form-control">
+			</div>
+
+
+			<!--Employee hra -->
+			<div class='form-group'>
+				<label>Employee HRA</label>
+				<input type="text" id='hra' class="form-control">
+			</div>
+
+
+			<!--Employee da -->
+			<div class='form-group'>
+				<label>Employee DA</label>
+				<input type="text" id='da' class="form-control">
+			</div>
+
+
+			<!--Employee deduction -->
+			<div class='form-group'>
+				<label>Employee Deduction</label>
+				<input type="text" id='deduct' class="form-control">
+			</div>
+
+			<!-- Button Group -->
+			<div class='form-group text-center'>
+				<button class="btn btn-lg btn-primary" id='save'    disabled onclick="saveData()">SAVE</button>
+				<button class="btn btn-lg btn-primary" id='change'  disabled onclick="changeData()">CHANGE</button>
+				<button class="btn btn-lg btn-primary" id='reset'   disabled onclick="resetForm()">RESET</button>
+			</div>
+
+		</form>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
