@@ -1,11 +1,9 @@
-JPDB-EMPLOYEE-FORM
+#JPDB-EMPLOYEE-FORM
 
-"This project is all about Employee Form Functionality and Operation."
-
-This Employee Form Contain Control And Navigation Buttons:-
-
-Control Buttons are New, Save, Edit, Change, Reset.
-Navigation Buttons are First, Prev, Next, Last.
+##"This project is all about Employee Form Functionality and Operation."
+###This Employee Form Contain Control And Navigation Buttons:-
+*Control Buttons are New, Save, Edit, Change, Reset.
+*Navigation Buttons are First, Prev, Next, Last.
 
 
 About JsonPowerDB:
